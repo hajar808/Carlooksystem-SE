@@ -33,6 +33,11 @@ public class ReservierungServiceImpl implements ReservierungService {
     }
 
     @Override
+    public List<Reservierung> readByVertriebler(String email) {
+        return reservierungsDAO.readByVertriebler(email);
+    }
+
+    @Override
     public boolean delete(int id) {
         reservierungsDAO.delete(id);
         return true;

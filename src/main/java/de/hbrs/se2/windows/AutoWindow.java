@@ -31,6 +31,7 @@ public class AutoWindow extends Window implements Button.ClickListener {
         form.addComponent(create);
         setContent(form);
         center();
+        setWidth("25%");
 
 
 

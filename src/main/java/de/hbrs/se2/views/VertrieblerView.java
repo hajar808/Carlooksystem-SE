@@ -5,11 +5,9 @@ import com.vaadin.navigator.ViewChangeListener;
 import com.vaadin.shared.ui.ContentMode;
 import com.vaadin.ui.*;
 import de.hbrs.se2.dao.entities.Auto;
+import de.hbrs.se2.dao.entities.Reservierung;
 import de.hbrs.se2.dao.entities.Vertriebler;
-import de.hbrs.se2.services.AutoService;
-import de.hbrs.se2.services.AutoServiceImpl;
-import de.hbrs.se2.services.ReservierungService;
-import de.hbrs.se2.services.ReservierungServiceImpl;
+import de.hbrs.se2.services.*;
 import de.hbrs.se2.windows.AutoWindow;
 
 import java.util.List;
@@ -19,20 +17,31 @@ public class VertrieblerView extends VerticalLayout implements View, MenuBar.Com
     private HorizontalLayout iconly;
     private MenuBar menu;
     private VerticalLayout contently;
+    private Button logout;
 
     private AutoService autoService;
     private ReservierungService reservierungService;
+    private AuthService authService;
     private Vertriebler vertriebler;
 
 
     public VertrieblerView(){
         autoService = new AutoServiceImpl();
         reservierungService = new ReservierungServiceImpl() ;
+        authService = new AuthServiceImpl();
 
 
     }
 
     public void setUp(){
+        logout = new Button("Logout");
+        logout.addClickListener(new Button.ClickListener() {
+            @Override
+            public void buttonClick(Button.ClickEvent clickEvent) {
+                authService.logout();
+
+            }
+        });
         contently = new VerticalLayout();
         iconly = new HorizontalLayout();
         iconly.setSizeFull();
@@ -45,8 +54,11 @@ public class VertrieblerView extends VerticalLayout implements View, MenuBar.Com
         MenuBar.MenuItem reservation = menu.addItem("Reservation", null , this);
 
         Label icon = new Label("<b>Carlooksystem</b>", ContentMode.HTML);
+        icon.addStyleName("icon");
         iconly.addComponent(icon);
-        iconly.setComponentAlignment(icon, Alignment.MIDDLE_CENTER);
+        iconly.addComponent(logout);
+        iconly.setComponentAlignment(icon, Alignment.TOP_CENTER);
+        iconly.setComponentAlignment(logout, Alignment.TOP_RIGHT);
 
         menuly.addComponent(menu);
         menuly.setComponentAlignment(menu, Alignment.MIDDLE_CENTER);
@@ -54,6 +66,7 @@ public class VertrieblerView extends VerticalLayout implements View, MenuBar.Com
         addComponent(iconly);
         addComponent(menuly);
         addComponent(contently);
+        setComponentAlignment(contently,Alignment.MIDDLE_CENTER);
         showAllAutos();
 
 
@@ -72,7 +85,24 @@ public class VertrieblerView extends VerticalLayout implements View, MenuBar.Com
             contently.addComponent(label);
 
         }else{
-            HorizontalLayout ly = new HorizontalLayout();
+           // HorizontalLayout ly = new HorizontalLayout();
+
+            Grid<Auto> grid = new Grid<>();
+            grid.setItems(autosListe);
+            grid.addColumn(Auto:: getId).setCaption("Id");
+            grid.addColumn(Auto:: getBeschreibung).setCaption("Beschreibung");
+            grid.addColumn(Auto:: getMarke).setCaption("Marke");
+            grid.addColumn(Auto:: getBaujahr).setCaption("Baujahr");
+
+
+            contently.addComponent(grid);
+
+
+
+
+
+
+            /*
             for(Auto auto: autosListe){
                 VerticalLayout autoly = new VerticalLayout();
                 Label id = new Label("" + auto.getId());
@@ -85,9 +115,41 @@ public class VertrieblerView extends VerticalLayout implements View, MenuBar.Com
                 autoly.addComponent(baujahr);
                 ly.addComponent(autoly);
 
-            }
-            contently.addComponent(ly);
+            }*/
+            //contently.addComponent(ly);
 
+        }
+    }
+
+    private void showAllReservation() {
+        cleanContent();
+        List<Reservierung> reservierungsListe = reservierungService.readByVertriebler(vertriebler.getEmail());
+        if (reservierungsListe.isEmpty()) {
+            Label label = new Label("Keine Reservierung vorhandeln");
+            contently.addComponent(label);
+
+        } else {
+
+            Grid<Reservierung> grid = new Grid<>();
+            grid.setItems(reservierungsListe);
+            grid.addColumn(Reservierung:: getId).setCaption("Id");
+            grid.addColumn(Reservierung:: getAuto_id).setCaption("Auto_Id");
+
+
+            contently.addComponent(grid);
+           /* HorizontalLayout ly = new HorizontalLayout();
+            for (Reservierung reservierung : reservierungsListe) {
+                VerticalLayout reservierungly = new VerticalLayout();
+                Label id = new Label("" + reservierung.getId());
+                Label auto_id = new Label("" +reservierung.getAuto_id());
+
+                reservierungly.addComponent(id);
+                reservierungly.addComponent(auto_id);
+
+                ly.addComponent(reservierungly);
+
+            }
+            contently.addComponent(ly);*/
         }
     }
 
@@ -97,15 +159,35 @@ public class VertrieblerView extends VerticalLayout implements View, MenuBar.Com
         if(vertriebler!=null){
             setUp();
         }else{
-            // TODO login
+            authService.logout();
         }
 
     }
 
     @Override
     public void menuSelected(MenuBar.MenuItem menuItem) {
-        if(menuItem.getText().equals("Add Auto")){
-            UI.getCurrent().addWindow(new AutoWindow());
+        String item = menuItem.getText();
+        switch (item){
+            case "Add Auto":
+                UI.getCurrent().addWindow(new AutoWindow());
+                break;
+
+            case "My Auto":
+                showAllAutos();
+                break;
+
+            case "Reservation":
+                showAllReservation();
+                break;
+
+                default:
+                    break;
+
+
+
         }
+        //if(menuItem.getText().equals("Add Auto")){
+           // UI.getCurrent().addWindow(new AutoWindow());
+        //}
     }
 }

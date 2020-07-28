@@ -9,6 +9,7 @@ public interface ReservierungService {
     void create(String email, int auto_id);
    List<Reservierung> getByEmail(String email);
     List<Reservierung> readAll();
+    List<Reservierung> readByVertriebler(String email);
     boolean delete(int id);
 
 }

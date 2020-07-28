@@ -103,6 +103,8 @@ public class AuthServiceImpl implements AuthService {
     @Override
     public void logout() {
         UI.getCurrent().getSession().setAttribute("user", null);
+        UI.getCurrent().getSession().close();
+        UI.getCurrent().getPage().setLocation("/login");
        // UI.getCurrent().getPage().open("/");
 
     }

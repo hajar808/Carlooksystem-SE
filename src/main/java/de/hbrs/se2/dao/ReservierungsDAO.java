@@ -85,6 +85,31 @@ public class ReservierungsDAO extends AbstractDAO {
 
 
     }
+    public List<Reservierung> readByVertriebler(String email){
+        List<Reservierung> list = new ArrayList<>();
+        try{
+
+            String sql ="SELECT r.id, r.auto_id, r.email FROM carlooksystem.reservierung As r, carlooksystem.auto As a WHERE a.email =? AND r.auto_id = a.id";
+            PreparedStatement statement = conn.prepareStatement(sql);
+            statement.setString(1,email);
+            ResultSet result = statement.executeQuery();
+
+            while(result.next()){
+                Reservierung reservierung = new Reservierung();
+
+                reservierung.setId(result.getInt("id"));
+                reservierung.setAuto_id(result.getInt("auto_id"));
+                reservierung.setEmail(result.getString("email"));
+
+                list.add(reservierung);
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return list;
+
+    }
 
     public List<Reservierung> readAll(){
         List<Reservierung> list = new ArrayList<>();
