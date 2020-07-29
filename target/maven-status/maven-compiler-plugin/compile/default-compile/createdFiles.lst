@@ -2,6 +2,7 @@ de\hbrs\se2\dao\entities\Kunde.class
 de\hbrs\se2\dao\entities\Vertriebler.class
 de\hbrs\se2\MyUI.class
 de\hbrs\se2\views\LoginView$1.class
+de\hbrs\se2\views\KundeView$3.class
 de\hbrs\se2\dao\entities\Reservierung.class
 de\hbrs\se2\MyUI$MyUIServlet.class
 de\hbrs\se2\views\RegistrierungView.class
@@ -9,6 +10,7 @@ de\hbrs\se2\dao\ReservierungsDAO.class
 de\hbrs\se2\services\AuthServiceImpl.class
 de\hbrs\se2\dao\VertrieblerDAO.class
 de\hbrs\se2\dao\entities\Auto.class
+de\hbrs\se2\views\KundeView$4.class
 de\hbrs\se2\dao\entities\Role.class
 de\hbrs\se2\services\ReservierungService.class
 de\hbrs\se2\utils\Views.class
@@ -20,6 +22,7 @@ de\hbrs\se2\dao\KundenDAO.class
 de\hbrs\se2\dao\RoleDAO.class
 de\hbrs\se2\services\AuthService.class
 de\hbrs\se2\services\AutoService.class
+de\hbrs\se2\views\KundeView$2.class
 de\hbrs\se2\views\VertrieblerView.class
 de\hbrs\se2\views\KundeView.class
 de\hbrs\se2\views\LoginView.class
@@ -27,5 +30,6 @@ de\hbrs\se2\services\ReservierungServiceImpl.class
 de\hbrs\se2\dao\AutosDAO.class
 de\hbrs\se2\services\AutoServiceImpl.class
 de\hbrs\se2\dao\JDBCConnection.class
+de\hbrs\se2\dao\entities\ReservedAuto.class
 de\hbrs\se2\exception\UserNotExistException.class
 de\hbrs\se2\windows\AutoWindow.class

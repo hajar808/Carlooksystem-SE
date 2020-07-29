@@ -36,7 +36,7 @@ public class MyUI extends UI {
          navigator.addView(Views.KUNDE, KundeView.class);
          navigator.addView(Views.VERTRIEBLER, VertrieblerView.class);
          navigator.addView(Views.REGiSTRIERUNG, RegistrierungView.class);
-
+         addStyleName("ui");
         UI.getCurrent().getNavigator().navigateTo(Views.LOGIN);
     }
 

@@ -177,5 +177,32 @@ public class AutosDAO  extends AbstractDAO {
         }
         return list;
     }
+
+    public List<Auto> search(String text){
+        List<Auto> list = new ArrayList<>();
+        try{
+
+            String sql ="SELECT * FROM carlooksystem.auto WHERE marke LIKE '%" + text+"%' OR beschreibung LIKE '%" +text+"%'";
+            PreparedStatement statement = conn.prepareStatement(sql);
+            ResultSet result = statement.executeQuery();
+
+            while(result.next()) {
+
+                Auto auto = new Auto();
+
+                auto.setId(result.getInt("id"));
+                auto.setEmail(result.getString("email"));
+                auto.setBeschreibung(result.getString("beschreibung"));
+                auto.setMarke(result.getString("marke"));
+                auto.setBaujahr(result.getString("baujahr"));
+
+                list.add(auto);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return list;
+
+    }
 }
 

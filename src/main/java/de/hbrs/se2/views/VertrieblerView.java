@@ -5,6 +5,7 @@ import com.vaadin.navigator.ViewChangeListener;
 import com.vaadin.shared.ui.ContentMode;
 import com.vaadin.ui.*;
 import de.hbrs.se2.dao.entities.Auto;
+import de.hbrs.se2.dao.entities.ReservedAuto;
 import de.hbrs.se2.dao.entities.Reservierung;
 import de.hbrs.se2.dao.entities.Vertriebler;
 import de.hbrs.se2.services.*;
@@ -34,6 +35,7 @@ public class VertrieblerView extends VerticalLayout implements View, MenuBar.Com
     }
 
     public void setUp(){
+        addStyleName("vertriebler");
         logout = new Button("Logout");
         logout.addClickListener(new Button.ClickListener() {
             @Override
@@ -55,6 +57,9 @@ public class VertrieblerView extends VerticalLayout implements View, MenuBar.Com
 
         Label icon = new Label("<b>Carlooksystem</b>", ContentMode.HTML);
         icon.addStyleName("icon");
+        Label email = new Label(vertriebler.getEmail());
+
+        iconly.addComponent(email);
         iconly.addComponent(icon);
         iconly.addComponent(logout);
         iconly.setComponentAlignment(icon, Alignment.TOP_CENTER);
@@ -88,6 +93,7 @@ public class VertrieblerView extends VerticalLayout implements View, MenuBar.Com
            // HorizontalLayout ly = new HorizontalLayout();
 
             Grid<Auto> grid = new Grid<>();
+            grid.setSizeFull();
             grid.setItems(autosListe);
             grid.addColumn(Auto:: getId).setCaption("Id");
             grid.addColumn(Auto:: getBeschreibung).setCaption("Beschreibung");
@@ -130,13 +136,22 @@ public class VertrieblerView extends VerticalLayout implements View, MenuBar.Com
 
         } else {
 
-            Grid<Reservierung> grid = new Grid<>();
-            grid.setItems(reservierungsListe);
-            grid.addColumn(Reservierung:: getId).setCaption("Id");
-            grid.addColumn(Reservierung:: getAuto_id).setCaption("Auto_Id");
+
+            List<ReservedAuto> autoList = autoService.getReservedAutos(reservierungsListe);
+            Grid<ReservedAuto> reservGrid = new Grid<>();
+            reservGrid.setSizeFull();
+
+            reservGrid.setItems(autoList);
+
+            reservGrid.addColumn(ReservedAuto:: getReservierung_id).setCaption("ReservierungId");
 
 
-            contently.addComponent(grid);
+            reservGrid.addColumn(ReservedAuto:: getBeschreibung).setCaption("Beschreibung");
+            reservGrid.addColumn(ReservedAuto:: getMarke).setCaption("Marke");
+            reservGrid.addColumn(ReservedAuto:: getBaujahr).setCaption("Baujahr");
+
+
+            contently.addComponent(reservGrid);
            /* HorizontalLayout ly = new HorizontalLayout();
             for (Reservierung reservierung : reservierungsListe) {
                 VerticalLayout reservierungly = new VerticalLayout();

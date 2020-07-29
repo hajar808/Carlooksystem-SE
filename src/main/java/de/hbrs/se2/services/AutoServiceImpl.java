@@ -3,7 +3,10 @@ package de.hbrs.se2.services;
 
 import de.hbrs.se2.dao.AutosDAO;
 import de.hbrs.se2.dao.entities.Auto;
+import de.hbrs.se2.dao.entities.ReservedAuto;
+import de.hbrs.se2.dao.entities.Reservierung;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class AutoServiceImpl implements AutoService {
@@ -52,6 +55,22 @@ public class AutoServiceImpl implements AutoService {
     public List<Auto> getAllAutos() {
 
         return autosDAO.readAll();
+    }
+
+    @Override
+    public List<Auto> search(String text) {
+        return autosDAO.search(text);
+    }
+
+    @Override
+    public List<ReservedAuto> getReservedAutos(List<Reservierung> list) {
+        List<ReservedAuto> autos  = new ArrayList<>();
+        for(Reservierung reservierung : list){
+            Auto auto = getAutoById(reservierung.getAuto_id());
+            ReservedAuto reservedAuto = new ReservedAuto(reservierung.getId(), auto);
+            autos.add(reservedAuto);
+        }
+        return autos;
     }
 
     @Override
