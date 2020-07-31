@@ -37,6 +37,7 @@ public class VertrieblerView extends VerticalLayout implements View, MenuBar.Com
     public void setUp(){
         addStyleName("vertriebler");
         logout = new Button("Logout");
+        logout.addStyleName("m");
         logout.addClickListener(new Button.ClickListener() {
             @Override
             public void buttonClick(Button.ClickEvent clickEvent) {
@@ -52,11 +53,12 @@ public class VertrieblerView extends VerticalLayout implements View, MenuBar.Com
 
         menu = new MenuBar() ;
         MenuBar.MenuItem addAuto = menu.addItem("Add Auto", null, this);
+        menu.addStyleName("m");
         MenuBar.MenuItem myAuto = menu.addItem("My Auto", null, this);
         MenuBar.MenuItem reservation = menu.addItem("Reservation", null , this);
 
         Label icon = new Label("<b>Carlooksystem</b>", ContentMode.HTML);
-        icon.addStyleName("icon");
+        icon.addStyleName("ic");
         Label email = new Label(vertriebler.getEmail());
 
         iconly.addComponent(email);

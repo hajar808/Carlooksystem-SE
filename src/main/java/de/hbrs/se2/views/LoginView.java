@@ -3,6 +3,7 @@ package de.hbrs.se2.views;
 
 import com.vaadin.navigator.View;
 import com.vaadin.navigator.ViewChangeListener;
+import com.vaadin.shared.ui.ContentMode;
 import com.vaadin.ui.*;
 import de.hbrs.se2.exception.IncorrectEmailOrPasswordException;
 import de.hbrs.se2.exception.UserNotExistException;
@@ -27,16 +28,23 @@ public class LoginView extends VerticalLayout implements View , Button.ClickList
     }
 
     public void setUp(){
+        addStyleName("login");
         email =  new TextField("E-Mail");
 
         form = new FormLayout();
+        form.addStyleName("form");
 
         passwort = new PasswordField("Passwort");
 
-        login = new Button("Login");
+        email.setRequiredIndicatorVisible(true);
+        passwort.setRequiredIndicatorVisible(true);
+
+        login = new Button("Anmelden");
+        login.addStyleName("anmelden");
         login.addClickListener(this);
 
         registration = new Button("Registrieren");
+        registration.addStyleName("registrieren");
         registration.addClickListener(new Button.ClickListener() {
             @Override
             public void buttonClick(Button.ClickEvent clickEvent) {
@@ -44,10 +52,16 @@ public class LoginView extends VerticalLayout implements View , Button.ClickList
             }
         });
 
+        Label icon = new Label("<b>Carlooksystem</b>", ContentMode.HTML);
+        icon.addStyleName("ic");
+
+
+
         form.addComponent(email);
         form.addComponent(passwort);
         form.addComponent(login);
         form.addComponent(registration);
+        addComponent(icon);
         addComponent(form);
     }
 

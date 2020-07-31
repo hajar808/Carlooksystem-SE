@@ -8,34 +8,33 @@
   <component name="ChangeListManager">
     <list default="true" id="18ba9871-690c-4b17-862e-c303c310035a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/hbrs/se2/MyUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/hbrs/se2/MyUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/hbrs/se2/dao/AutosDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/hbrs/se2/dao/AutosDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/hbrs/se2/services/AutoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/hbrs/se2/services/AutoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/hbrs/se2/services/AutoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/hbrs/se2/services/AutoServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/hbrs/se2/views/KundeView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/hbrs/se2/views/KundeView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/hbrs/se2/views/LoginView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/hbrs/se2/views/LoginView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/hbrs/se2/views/RegistrierungView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/hbrs/se2/views/RegistrierungView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/hbrs/se2/views/VertrieblerView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/hbrs/se2/views/VertrieblerView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/VAADIN/themes/mytheme/mytheme.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/VAADIN/themes/mytheme/mytheme.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/VAADIN/themes/mytheme/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/VAADIN/themes/mytheme/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/hbrs/se2/MyUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/hbrs/se2/MyUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/hbrs/se2/dao/AutosDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/hbrs/se2/dao/AutosDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/hbrs/se2/services/AutoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/hbrs/se2/services/AutoService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/de/hbrs/se2/services/AutoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/hbrs/se2/services/AutoServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/de/hbrs/se2/views/KundeView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/hbrs/se2/views/KundeView$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/hbrs/se2/views/KundeView$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/hbrs/se2/views/KundeView$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/hbrs/se2/views/KundeView$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/hbrs/se2/views/KundeView$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/hbrs/se2/views/KundeView$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/hbrs/se2/views/KundeView$4.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/de/hbrs/se2/views/KundeView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/hbrs/se2/views/KundeView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/hbrs/se2/views/LoginView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/hbrs/se2/views/LoginView$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/hbrs/se2/views/LoginView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/hbrs/se2/views/LoginView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/hbrs/se2/views/RegistrierungView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/hbrs/se2/views/RegistrierungView.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/de/hbrs/se2/views/VertrieblerView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/hbrs/se2/views/VertrieblerView$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/de/hbrs/se2/views/VertrieblerView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/hbrs/se2/views/VertrieblerView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/se2project-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/se2project-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/se2project-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/se2project-1.0-SNAPSHOT/VAADIN/themes/mytheme/mytheme.scss" beforeDir="false" afterPath="$PROJECT_DIR$/target/se2project-1.0-SNAPSHOT/VAADIN/themes/mytheme/mytheme.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/se2project-1.0-SNAPSHOT/VAADIN/themes/mytheme/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/se2project-1.0-SNAPSHOT/VAADIN/themes/mytheme/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/se2project-1.0-SNAPSHOT/WEB-INF/classes/de/hbrs/se2/MyUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/se2project-1.0-SNAPSHOT/WEB-INF/classes/de/hbrs/se2/MyUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/se2project-1.0-SNAPSHOT/WEB-INF/classes/de/hbrs/se2/dao/AutosDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/se2project-1.0-SNAPSHOT/WEB-INF/classes/de/hbrs/se2/dao/AutosDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/se2project-1.0-SNAPSHOT/WEB-INF/classes/de/hbrs/se2/services/AutoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/se2project-1.0-SNAPSHOT/WEB-INF/classes/de/hbrs/se2/services/AutoService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/se2project-1.0-SNAPSHOT/WEB-INF/classes/de/hbrs/se2/services/AutoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/se2project-1.0-SNAPSHOT/WEB-INF/classes/de/hbrs/se2/services/AutoServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/se2project-1.0-SNAPSHOT/WEB-INF/classes/de/hbrs/se2/views/KundeView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/se2project-1.0-SNAPSHOT/WEB-INF/classes/de/hbrs/se2/views/KundeView$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/se2project-1.0-SNAPSHOT/WEB-INF/classes/de/hbrs/se2/views/KundeView$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/se2project-1.0-SNAPSHOT/WEB-INF/classes/de/hbrs/se2/views/KundeView$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/se2project-1.0-SNAPSHOT/WEB-INF/classes/de/hbrs/se2/views/KundeView$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/se2project-1.0-SNAPSHOT/WEB-INF/classes/de/hbrs/se2/views/KundeView$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/se2project-1.0-SNAPSHOT/WEB-INF/classes/de/hbrs/se2/views/KundeView$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/se2project-1.0-SNAPSHOT/WEB-INF/classes/de/hbrs/se2/views/KundeView$4.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/se2project-1.0-SNAPSHOT/WEB-INF/classes/de/hbrs/se2/views/KundeView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/se2project-1.0-SNAPSHOT/WEB-INF/classes/de/hbrs/se2/views/KundeView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/se2project-1.0-SNAPSHOT/WEB-INF/classes/de/hbrs/se2/views/LoginView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/se2project-1.0-SNAPSHOT/WEB-INF/classes/de/hbrs/se2/views/LoginView$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/se2project-1.0-SNAPSHOT/WEB-INF/classes/de/hbrs/se2/views/LoginView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/se2project-1.0-SNAPSHOT/WEB-INF/classes/de/hbrs/se2/views/LoginView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/se2project-1.0-SNAPSHOT/WEB-INF/classes/de/hbrs/se2/views/RegistrierungView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/se2project-1.0-SNAPSHOT/WEB-INF/classes/de/hbrs/se2/views/RegistrierungView.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/se2project-1.0-SNAPSHOT/WEB-INF/classes/de/hbrs/se2/views/VertrieblerView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/se2project-1.0-SNAPSHOT/WEB-INF/classes/de/hbrs/se2/views/VertrieblerView$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/se2project-1.0-SNAPSHOT/WEB-INF/classes/de/hbrs/se2/views/VertrieblerView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/se2project-1.0-SNAPSHOT/WEB-INF/classes/de/hbrs/se2/views/VertrieblerView.class" afterDir="false" />
     </list>
@@ -64,23 +63,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AutoService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/de/hbrs/se2/services/AutoService.java">
+      <file leaf-file-name="ReservierungsDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/hbrs/se2/dao/ReservierungsDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AuthService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/de/hbrs/se2/services/AuthService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+            <state relative-caret-position="1292">
+              <caret line="82" column="9" selection-start-line="82" selection-start-column="9" selection-end-line="82" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -91,8 +78,8 @@
       <file leaf-file-name="LoginView.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/de/hbrs/se2/views/LoginView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="12" column="85" lean-forward="true" selection-start-line="12" selection-start-column="64" selection-end-line="12" selection-end-column="85" />
+            <state relative-caret-position="209">
+              <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="39" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -100,11 +87,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReservierungService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/de/hbrs/se2/services/ReservierungService.java">
+      <file leaf-file-name="KundenDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/hbrs/se2/dao/KundenDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+            <state relative-caret-position="260">
+              <caret line="59" selection-start-line="59" selection-end-line="60" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -112,17 +99,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AutoServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/de/hbrs/se2/services/AutoServiceImpl.java">
+      <file leaf-file-name="AutoWindow.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/hbrs/se2/windows/AutoWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="70" column="34" selection-start-line="70" selection-start-column="34" selection-end-line="70" selection-end-column="34" />
+            <state relative-caret-position="357">
+              <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1076#1077#0" expanded="true" />
-                <element signature="e#1126#1127#0" expanded="true" />
-                <element signature="e#1280#1281#0" expanded="true" />
-                <element signature="e#1310#1311#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -131,8 +114,8 @@
       <file leaf-file-name="VertrieblerView.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/de/hbrs/se2/views/VertrieblerView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="59" column="43" selection-start-line="59" selection-start-column="43" selection-end-line="59" selection-end-column="43" />
+            <state relative-caret-position="111">
+              <caret line="54" column="46" selection-start-line="54" selection-start-column="46" selection-end-line="54" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -143,17 +126,20 @@
       <file leaf-file-name="MyUI.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/de/hbrs/se2/MyUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
+            <state relative-caret-position="284">
               <caret line="38" column="25" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AbstractDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/de/hbrs/se2/dao/AbstractDAO.java">
+      <file leaf-file-name="RegistrierungView.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/hbrs/se2/views/RegistrierungView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+            <state relative-caret-position="69">
+              <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -161,8 +147,8 @@
       <file leaf-file-name="KundeView.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/de/hbrs/se2/views/KundeView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="60" column="28" selection-start-line="60" selection-start-column="28" selection-end-line="60" selection-end-column="28" />
+            <state relative-caret-position="199">
+              <caret line="70" column="35" selection-start-line="70" selection-start-column="35" selection-end-line="70" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -173,10 +159,15 @@
       <file leaf-file-name="mytheme.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/VAADIN/themes/mytheme/mytheme.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="50" column="25" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="25" />
+            <state relative-caret-position="225">
+              <caret line="84" column="33" selection-start-line="84" selection-start-column="33" selection-end-line="84" selection-end-column="33" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add-circle-outline.svg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/VAADIN/themes/mytheme/images/add-circle-outline.svg">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
     </leaf>
@@ -203,8 +194,6 @@
         <option value="$PROJECT_DIR$/src/main/java/de/hbrs/se2/exception/UserNotExistException.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/hbrs/se2/exception/IncorrectEmailOrPasswordException.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/hbrs/se2/services/AuthService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/hbrs/se2/views/LoginView.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/hbrs/se2/views/RegistrierungView.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/hbrs/se2/dao/KundenDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/hbrs/se2/dao/VertrieblerDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/hbrs/se2/windows/AutoWindow.java" />
@@ -216,9 +205,11 @@
         <option value="$PROJECT_DIR$/src/main/java/de/hbrs/se2/dao/entities/ReservedAuto.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/hbrs/se2/services/AutoService.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/hbrs/se2/services/AutoServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/hbrs/se2/views/VertrieblerView.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/hbrs/se2/MyUI.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/hbrs/se2/views/KundeView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/hbrs/se2/views/LoginView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/hbrs/se2/views/RegistrierungView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/hbrs/se2/views/VertrieblerView.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/VAADIN/themes/mytheme/mytheme.scss" />
       </list>
     </option>
@@ -265,6 +256,7 @@
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
+      <autoscrollFromSource ProjectPane="true" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
@@ -362,6 +354,13 @@
               <item name="se2project" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="se2project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="se2project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -410,6 +409,9 @@
     <property name="project.structure.side.proportion" value="0.35240963" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\hajar\Desktop\hausarbeit\se2project\src\main\webapp\VAADIN\themes\mytheme\images" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\hajar\Desktop\hausarbeit\se2project\src\main\java\de\hbrs\se2" />
     </key>
@@ -552,42 +554,42 @@
       <updated>1595850938885</updated>
       <workItem from="1595850950397" duration="1158000" />
       <workItem from="1595852174399" duration="656000" />
-      <workItem from="1595852992866" duration="39567000" />
+      <workItem from="1595852992866" duration="54624000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41381000" />
+    <option name="totallyTimeSpent" value="56438000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50067115" side_tool="true" weight="0.32846716" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.329927" />
-      <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.3295302" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info id="Capture Tool" order="2" />
+      <window_info anchor="right" id="Maven Projects" order="8" visible="true" weight="0.20604026" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info id="Capture Tool" order="7" />
       <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Database" order="3" weight="0.3295302" />
+      <window_info anchor="right" id="Database" order="5" weight="0.3295302" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="2" />
+      <window_info id="UI Designer" order="4" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.329927" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info id="Image Layers" order="2" />
-      <window_info anchor="bottom" id="Java Enterprise" order="7" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32846716" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25637585" />
-      <window_info id="Web" order="2" side_tool="true" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.329927" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info id="Image Layers" order="3" />
+      <window_info anchor="bottom" id="Java Enterprise" order="10" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932885" visible="true" weight="0.32846716" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24697986" />
+      <window_info id="Web" order="6" side_tool="true" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -841,40 +843,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/hbrs/se2/dao/KundenDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="26" column="33" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/hbrs/se2/dao/VertrieblerDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="20" column="59" lean-forward="true" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/hbrs/se2/windows/AutoWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/hbrs/se2/views/RegistrierungView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="55" column="13" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -927,16 +899,6 @@
             <element signature="imports" expanded="true" />
             <element signature="e#867#868#0" expanded="true" />
             <element signature="e#894#895#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/hbrs/se2/dao/ReservierungsDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="82" column="9" lean-forward="true" selection-start-line="82" selection-start-column="9" selection-end-line="82" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1011,16 +973,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/hbrs/se2/views/LoginView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="12" column="85" lean-forward="true" selection-start-line="12" selection-start-column="64" selection-end-line="12" selection-end-column="85" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/hbrs/se2/services/ReservierungService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -1051,10 +1003,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/hbrs/se2/views/VertrieblerView.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/hbrs/se2/dao/ReservierungsDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="59" column="43" selection-start-line="59" selection-start-column="43" selection-end-line="59" selection-end-column="43" />
+        <state relative-caret-position="1292">
+          <caret line="82" column="9" selection-start-line="82" selection-start-column="9" selection-end-line="82" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/hbrs/se2/windows/AutoWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1063,25 +1025,68 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/hbrs/se2/MyUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
+        <state relative-caret-position="284">
           <caret line="38" column="25" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/hbrs/se2/views/KundeView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="60" column="28" selection-start-line="60" selection-start-column="28" selection-end-line="60" selection-end-column="28" />
+        <state relative-caret-position="199">
+          <caret line="70" column="35" selection-start-line="70" selection-start-column="35" selection-end-line="70" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/hbrs/se2/dao/KundenDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="59" selection-start-line="59" selection-end-line="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/hbrs/se2/views/LoginView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="39" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/hbrs/se2/views/RegistrierungView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/hbrs/se2/views/VertrieblerView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="54" column="46" selection-start-line="54" selection-start-column="46" selection-end-line="54" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/VAADIN/themes/mytheme/images/add-circle-outline.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/VAADIN/themes/mytheme/mytheme.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="50" column="25" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="25" />
+        <state relative-caret-position="225">
+          <caret line="84" column="33" selection-start-line="84" selection-start-column="33" selection-end-line="84" selection-end-column="33" />
         </state>
       </provider>
     </entry>

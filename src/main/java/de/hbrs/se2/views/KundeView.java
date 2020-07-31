@@ -42,6 +42,7 @@ public class KundeView extends VerticalLayout implements View, MenuBar.Command {
 
         addStyleName("view");
         logout = new Button("Logout");
+        logout.addStyleName("m");
         logout.addClickListener(new Button.ClickListener() {
             @Override
             public void buttonClick(Button.ClickEvent clickEvent) {
@@ -80,6 +81,7 @@ public class KundeView extends VerticalLayout implements View, MenuBar.Command {
 
         searchField = new TextField();
         search = new Button("Suche");
+        search.addStyleName("m");
         search.addClickListener(new Button.ClickListener() {
             @Override
             public void buttonClick(Button.ClickEvent clickEvent) {
