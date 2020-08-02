@@ -5,6 +5,7 @@ import com.vaadin.navigator.ViewChangeListener;
 import com.vaadin.shared.ui.ContentMode;
 import com.vaadin.ui.*;
 import de.hbrs.se2.dao.entities.*;
+import de.hbrs.se2.exception.DataBaseException;
 import de.hbrs.se2.services.*;
 import de.hbrs.se2.windows.AutoWindow;
 
@@ -32,9 +33,14 @@ public class KundeView extends VerticalLayout implements View, MenuBar.Command {
 
 
     public KundeView(){
-        authService = new AuthServiceImpl();
-        reservierungService = new ReservierungServiceImpl();
-        autoService = new AutoServiceImpl();
+        try {
+            authService = new AuthServiceImpl();
+            reservierungService = new ReservierungServiceImpl();
+            autoService = new AutoServiceImpl();
+        } catch (DataBaseException e) {
+            Notification.show("Error", e.getMessage(),Notification.Type.ERROR_MESSAGE);
+        }
+
     }
 
 
@@ -67,6 +73,9 @@ public class KundeView extends VerticalLayout implements View, MenuBar.Command {
         Label icon = new Label("<b>Carlooksystem</b>", ContentMode.HTML);
         icon.addStyleName("icon");
         Label email = new Label(kunde.getEmail());
+        email.addStyleName("em");
+
+
 
         iconly.addComponent(email);
         iconly.addComponent(icon);

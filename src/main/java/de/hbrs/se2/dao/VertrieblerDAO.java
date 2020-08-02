@@ -2,6 +2,7 @@ package de.hbrs.se2.dao;
 
 
 import de.hbrs.se2.dao.entities.Vertriebler;
+import de.hbrs.se2.exception.DataBaseException;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -10,7 +11,8 @@ import java.sql.SQLException;
 public class VertrieblerDAO extends AbstractDAO {
 
 
-    public VertrieblerDAO() {
+    public VertrieblerDAO() throws DataBaseException {
+        super();
     }
 
     public void create(Vertriebler vertriebler) {

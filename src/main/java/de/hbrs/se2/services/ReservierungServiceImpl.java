@@ -3,13 +3,14 @@ package de.hbrs.se2.services;
 
 import de.hbrs.se2.dao.ReservierungsDAO;
 import de.hbrs.se2.dao.entities.Reservierung;
+import de.hbrs.se2.exception.DataBaseException;
 
 import java.util.List;
 
 public class ReservierungServiceImpl implements ReservierungService {
     private ReservierungsDAO reservierungsDAO;
 
-    public ReservierungServiceImpl(){
+    public ReservierungServiceImpl() throws DataBaseException {
         this.reservierungsDAO = new ReservierungsDAO();
 
     }

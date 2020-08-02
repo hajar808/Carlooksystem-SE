@@ -1,6 +1,9 @@
 package de.hbrs.se2.dao;
 
+import de.hbrs.se2.exception.DataBaseException;
+
 import java.sql.Connection;
+import java.sql.DataTruncation;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.Properties;
@@ -26,7 +29,7 @@ public class JDBCConnection {
 
     }
 
-    public Connection openConnection(){
+    public Connection openConnection() throws DataBaseException {
         try {
             DriverManager.registerDriver( new org.postgresql.Driver() );
             Properties props = new Properties();
@@ -36,7 +39,7 @@ public class JDBCConnection {
             connection = DriverManager.getConnection(URL, props);
 
         } catch (SQLException e) {
-            e.printStackTrace();
+           throw new DataBaseException("Bitte überprüfen Sie VPN Verbindung");
         }
 
         return connection;

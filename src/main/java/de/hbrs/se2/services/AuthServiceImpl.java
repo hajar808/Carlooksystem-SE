@@ -6,9 +6,13 @@ import de.hbrs.se2.dao.KundenDAO;
 import de.hbrs.se2.dao.VertrieblerDAO;
 import de.hbrs.se2.dao.entities.Kunde;
 import de.hbrs.se2.dao.entities.Vertriebler;
+import de.hbrs.se2.exception.DataBaseException;
 import de.hbrs.se2.exception.IncorrectEmailOrPasswordException;
+import de.hbrs.se2.exception.NoValidDataException;
 import de.hbrs.se2.exception.UserNotExistException;
 import de.hbrs.se2.utils.Views;
+
+import java.util.Optional;
 
 public class AuthServiceImpl implements AuthService {
 
@@ -17,25 +21,28 @@ public class AuthServiceImpl implements AuthService {
 
     private static final String EMAILVALIDE = "^[\\w-_\\.+]*[\\w-_\\.]\\@([\\w]+\\.)+[\\w]+[\\w]$";
 
-    public AuthServiceImpl() {
+    public AuthServiceImpl() throws DataBaseException {
         this.kundeDAO = new KundenDAO();
         this.vertrieblerDAO = new VertrieblerDAO();
 
 
     }
 
-    private boolean validate(String email, String passwort, String passwortWdh, String name) {
+    private boolean validate(String email, String passwort, String passwortWdh, String name) throws NoValidDataException {
 
         if (email.isEmpty() || passwort.isEmpty() || name.isEmpty()) {
-            return false; // TODO NoValidDataException
+            throw new NoValidDataException("Bitte alle Felder ausfühllen");
         }
         if (!email.matches(EMAILVALIDE)) {
-            return false; // TODO NotValidEmailException
+            throw new NoValidDataException("Bitte eine gültige E-Mail eingeben");
 
         }if(!passwort.equals(passwortWdh)){
-            return false;
+            throw new NoValidDataException("Passwörter stimmen nicht überein");
 
         }
+
+
+
         return true;
 
         // TODO Passwort check
@@ -52,14 +59,22 @@ public class AuthServiceImpl implements AuthService {
 
 
     @Override
-    public boolean register(String email, String passwort, String passwortWdh, String name) {
+    public boolean register(String email, String passwort, String passwortWdh, String name) throws NoValidDataException {
         validate(email, passwort,passwortWdh, name);
         if (isVertrierbler(email)) {
+            Vertriebler existVertriebler = vertrieblerDAO.readById(email);
+            if(existVertriebler!=null){
+                throw new NoValidDataException("E-Mail bereits vorhanden");
+            }
             Vertriebler vertriebler = new Vertriebler(email, passwort, name);
             //speichere vertriebler in DB
             vertrieblerDAO.create(vertriebler);
 
         } else {
+            Kunde existKunde = kundeDAO.readByEmail(email);
+            if(existKunde!= null){
+                throw new NoValidDataException("E-Mail bereits vorhanden");
+            }
             Kunde kunde = new Kunde(email, passwort, name);
             kundeDAO.create(kunde);
         }
@@ -84,8 +99,7 @@ public class AuthServiceImpl implements AuthService {
         } else {
             Kunde kunde = kundeDAO.readByEmail(email);
             if (kunde == null  ||!check(passwort, kunde.getPasswort())) {
-                // TODO Incorrect password
-                return;
+                throw new IncorrectEmailOrPasswordException();
             }
 
             UI.getCurrent().getSession().setAttribute("user", kunde);

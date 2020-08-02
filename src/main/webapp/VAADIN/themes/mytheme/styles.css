@@ -12415,6 +12415,9 @@ div.v-layout.v-horizontal.v-widget {
 
 .mytheme .icon {
 	margin-left: 0%;
+	font-size: 60pt;
+	font-weight: bold;
+	font-family: cursive;
 }
 
 .mytheme .ic {
@@ -12436,7 +12439,10 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .mytheme .view {
-	background: bisque;
+	background: white;
+	min-height: 1000px;
+	background-size: cover;
+	background-image: url(https://pmrpressrelease.com/wp-content/uploads/2019/03/Electric-Car-Rental.jpg);
 }
 
 .mytheme .vertriebler {
@@ -12454,7 +12460,7 @@ div.v-layout.v-horizontal.v-widget {
 	width: 12%;
 }
 
-.mytheme .m {
+.mytheme .m, .mytheme .em {
 	background: #e8f0fe;
 }
 

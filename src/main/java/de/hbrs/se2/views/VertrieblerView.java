@@ -8,6 +8,7 @@ import de.hbrs.se2.dao.entities.Auto;
 import de.hbrs.se2.dao.entities.ReservedAuto;
 import de.hbrs.se2.dao.entities.Reservierung;
 import de.hbrs.se2.dao.entities.Vertriebler;
+import de.hbrs.se2.exception.DataBaseException;
 import de.hbrs.se2.services.*;
 import de.hbrs.se2.windows.AutoWindow;
 
@@ -27,9 +28,14 @@ public class VertrieblerView extends VerticalLayout implements View, MenuBar.Com
 
 
     public VertrieblerView(){
-        autoService = new AutoServiceImpl();
-        reservierungService = new ReservierungServiceImpl() ;
-        authService = new AuthServiceImpl();
+        try {
+            autoService = new AutoServiceImpl();
+            reservierungService = new ReservierungServiceImpl() ;
+            authService = new AuthServiceImpl();
+        } catch (DataBaseException e) {
+            Notification.show("Error", e.getMessage(),Notification.Type.ERROR_MESSAGE);
+        }
+
 
 
     }
@@ -37,6 +43,7 @@ public class VertrieblerView extends VerticalLayout implements View, MenuBar.Com
     public void setUp(){
         addStyleName("vertriebler");
         logout = new Button("Logout");
+        logout.setId("logout");
         logout.addStyleName("m");
         logout.addClickListener(new Button.ClickListener() {
             @Override
@@ -60,6 +67,8 @@ public class VertrieblerView extends VerticalLayout implements View, MenuBar.Com
         Label icon = new Label("<b>Carlooksystem</b>", ContentMode.HTML);
         icon.addStyleName("ic");
         Label email = new Label(vertriebler.getEmail());
+        email.setId("email_lbl");
+        email.addStyleName("em");
 
         iconly.addComponent(email);
         iconly.addComponent(icon);
@@ -96,6 +105,7 @@ public class VertrieblerView extends VerticalLayout implements View, MenuBar.Com
 
             Grid<Auto> grid = new Grid<>();
             grid.setSizeFull();
+            grid.setHeightUndefined();
             grid.setItems(autosListe);
             grid.addColumn(Auto:: getId).setCaption("Id");
             grid.addColumn(Auto:: getBeschreibung).setCaption("Beschreibung");

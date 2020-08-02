@@ -5,6 +5,7 @@ import de.hbrs.se2.dao.AutosDAO;
 import de.hbrs.se2.dao.entities.Auto;
 import de.hbrs.se2.dao.entities.ReservedAuto;
 import de.hbrs.se2.dao.entities.Reservierung;
+import de.hbrs.se2.exception.DataBaseException;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,7 +15,7 @@ public class AutoServiceImpl implements AutoService {
 
     private AutosDAO autosDAO;
 
-    public AutoServiceImpl(){
+    public AutoServiceImpl() throws DataBaseException {
         this.autosDAO = new AutosDAO();
 
     }

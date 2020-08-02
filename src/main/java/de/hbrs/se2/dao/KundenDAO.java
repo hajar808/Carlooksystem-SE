@@ -2,6 +2,7 @@ package de.hbrs.se2.dao;
 
 
 import de.hbrs.se2.dao.entities.Kunde;
+import de.hbrs.se2.exception.DataBaseException;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -10,7 +11,8 @@ import java.sql.SQLException;
 public class KundenDAO extends AbstractDAO{
 
 
-    public KundenDAO(){
+    public KundenDAO() throws DataBaseException {
+        super();
 
     }
 

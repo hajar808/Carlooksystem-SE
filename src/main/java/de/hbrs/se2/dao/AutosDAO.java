@@ -3,6 +3,7 @@ package de.hbrs.se2.dao;
 
 import de.hbrs.se2.dao.entities.Auto;
 import de.hbrs.se2.dao.entities.Reservierung;
+import de.hbrs.se2.exception.DataBaseException;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -18,7 +19,8 @@ public class AutosDAO  extends AbstractDAO {
     private Connection conn;
     */
 
-    public AutosDAO(){
+    public AutosDAO() throws DataBaseException {
+        super();
         /*
         this.jdbc = JDBCConnection.getInstance();
         conn = jdbc.openConnection();

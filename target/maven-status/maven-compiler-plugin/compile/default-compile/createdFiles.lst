@@ -4,12 +4,14 @@ de\hbrs\se2\MyUI.class
 de\hbrs\se2\views\LoginView$1.class
 de\hbrs\se2\views\KundeView$3.class
 de\hbrs\se2\dao\entities\Reservierung.class
+de\hbrs\se2\exception\DataBaseException.class
 de\hbrs\se2\MyUI$MyUIServlet.class
 de\hbrs\se2\views\RegistrierungView.class
 de\hbrs\se2\dao\ReservierungsDAO.class
 de\hbrs\se2\services\AuthServiceImpl.class
 de\hbrs\se2\dao\VertrieblerDAO.class
 de\hbrs\se2\dao\entities\Auto.class
+de\hbrs\se2\exception\NoValidDataException.class
 de\hbrs\se2\views\KundeView$4.class
 de\hbrs\se2\dao\entities\Role.class
 de\hbrs\se2\services\ReservierungService.class

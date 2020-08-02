@@ -5,6 +5,7 @@ import com.vaadin.navigator.View;
 import com.vaadin.navigator.ViewChangeListener;
 import com.vaadin.shared.ui.ContentMode;
 import com.vaadin.ui.*;
+import de.hbrs.se2.exception.DataBaseException;
 import de.hbrs.se2.exception.IncorrectEmailOrPasswordException;
 import de.hbrs.se2.exception.UserNotExistException;
 import de.hbrs.se2.services.AuthService;
@@ -23,27 +24,35 @@ public class LoginView extends VerticalLayout implements View , Button.ClickList
     private Button registration;
 
     public LoginView(){
-        service = new AuthServiceImpl();
+        try {
+            service = new AuthServiceImpl();
+        } catch (DataBaseException e) {
+            Notification.show("Error", e.getMessage(),Notification.Type.ERROR_MESSAGE);
+        }
 
     }
 
     public void setUp(){
         addStyleName("login");
         email =  new TextField("E-Mail");
+        email.setId("email");
 
         form = new FormLayout();
         form.addStyleName("form");
 
         passwort = new PasswordField("Passwort");
+        passwort.setId("passwort");
 
         email.setRequiredIndicatorVisible(true);
         passwort.setRequiredIndicatorVisible(true);
 
         login = new Button("Anmelden");
+        login.setId("login");
         login.addStyleName("anmelden");
         login.addClickListener(this);
 
         registration = new Button("Registrieren");
+        registration.setId("registrieren");
         registration.addStyleName("registrieren");
         registration.addClickListener(new Button.ClickListener() {
             @Override

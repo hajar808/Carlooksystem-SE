@@ -3,6 +3,7 @@ package de.hbrs.se2.windows;
 import com.vaadin.ui.*;
 import de.hbrs.se2.dao.entities.Auto;
 import de.hbrs.se2.dao.entities.Vertriebler;
+import de.hbrs.se2.exception.DataBaseException;
 import de.hbrs.se2.services.AutoService;
 import de.hbrs.se2.services.AutoServiceImpl;
 
@@ -17,21 +18,25 @@ public class AutoWindow extends Window implements Button.ClickListener {
 
 
     public AutoWindow(){
-        service = new AutoServiceImpl();
-        form = new FormLayout();
-        marke = new TextField("marke");
-        beschreibung = new TextField("beschreibung");
-        baujahr = new TextField("baujahr");
-        create = new Button("Create");
-        create.addClickListener(this);
+        try {
+            service = new AutoServiceImpl();
+            form = new FormLayout();
+            marke = new TextField("marke");
+            beschreibung = new TextField("beschreibung");
+            baujahr = new TextField("baujahr");
+            create = new Button("Create");
+            create.addClickListener(this);
 
-        form.addComponent(marke);
-        form.addComponent(beschreibung);
-        form.addComponent(baujahr);
-        form.addComponent(create);
-        setContent(form);
-        center();
-        setWidth("25%");
+            form.addComponent(marke);
+            form.addComponent(beschreibung);
+            form.addComponent(baujahr);
+            form.addComponent(create);
+            setContent(form);
+            center();
+            setWidth("25%");
+        } catch (DataBaseException e) {
+            Notification.show("Error", e.getMessage(),Notification.Type.ERROR_MESSAGE);
+        }
 
 
 

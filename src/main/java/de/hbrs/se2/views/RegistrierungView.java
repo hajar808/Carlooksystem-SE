@@ -4,7 +4,9 @@ import com.vaadin.navigator.View;
 import com.vaadin.navigator.ViewChangeListener;
 import com.vaadin.shared.ui.ContentMode;
 import com.vaadin.ui.*;
+import de.hbrs.se2.exception.DataBaseException;
 import de.hbrs.se2.exception.IncorrectEmailOrPasswordException;
+import de.hbrs.se2.exception.NoValidDataException;
 import de.hbrs.se2.exception.UserNotExistException;
 import de.hbrs.se2.services.AuthService;
 import de.hbrs.se2.services.AuthServiceImpl;
@@ -20,7 +22,11 @@ public class RegistrierungView  extends VerticalLayout implements View,Button.Cl
   private AuthService service;
 
     public RegistrierungView(){
-        service = new AuthServiceImpl();
+        try {
+            service = new AuthServiceImpl();
+        } catch (DataBaseException e) {
+            Notification.show("Error", e.getMessage(),Notification.Type.ERROR_MESSAGE);
+        }
 
     }
     public void setUp(){
@@ -30,15 +36,21 @@ public class RegistrierungView  extends VerticalLayout implements View,Button.Cl
         form.addStyleName("form");
 
         email = new TextField("E-Mail");
+        email.setId("email");
+
         passwort = new PasswordField("Passwort");
+        passwort.setId("passwort");
         passwortWdh = new PasswordField("PasswortWdh");
+        passwortWdh.setId("passwortWdh");
         name = new TextField("Name");
+        name.setId("name");
         email.setRequiredIndicatorVisible(true);
         passwort.setRequiredIndicatorVisible(true);
         passwortWdh.setRequiredIndicatorVisible(true);
         name.setRequiredIndicatorVisible(true);
 
         registration = new Button("Registrieren");
+        registration.setId("regestrieren");
         registration.addStyleName("registrieren");
 
         registration.addClickListener(this);
@@ -78,7 +90,7 @@ public class RegistrierungView  extends VerticalLayout implements View,Button.Cl
         try{
             service.register(emailInput, passwortInput, passwortWdgInput, nameInput);
             UI.getCurrent().getNavigator().navigateTo(Views.LOGIN);
-        }catch (Exception e) {
+        }catch (NoValidDataException e) {
             Notification.show("Error",e.getMessage(), Notification.Type.ERROR_MESSAGE);
 
 

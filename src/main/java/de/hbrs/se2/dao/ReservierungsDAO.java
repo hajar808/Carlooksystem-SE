@@ -2,6 +2,7 @@ package de.hbrs.se2.dao;
 
 
 import de.hbrs.se2.dao.entities.Reservierung;
+import de.hbrs.se2.exception.DataBaseException;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -12,7 +13,8 @@ import java.util.List;
 public class ReservierungsDAO extends AbstractDAO {
 
 
-    public ReservierungsDAO(){
+    public ReservierungsDAO() throws DataBaseException {
+        super();
     }
 
     public void create(Reservierung reservierung){

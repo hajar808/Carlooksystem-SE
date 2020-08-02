@@ -8,6 +8,7 @@ C:\Users\hajar\Desktop\hausarbeit\se2project\src\main\java\de\hbrs\se2\services\
 C:\Users\hajar\Desktop\hausarbeit\se2project\src\main\java\de\hbrs\se2\dao\entities\Reservierung.java
 C:\Users\hajar\Desktop\hausarbeit\se2project\src\main\java\de\hbrs\se2\windows\AutoWindow.java
 C:\Users\hajar\Desktop\hausarbeit\se2project\src\main\java\de\hbrs\se2\dao\entities\Vertriebler.java
+C:\Users\hajar\Desktop\hausarbeit\se2project\src\main\java\de\hbrs\se2\exception\NoValidDataException.java
 C:\Users\hajar\Desktop\hausarbeit\se2project\src\main\java\de\hbrs\se2\services\AutoServiceImpl.java
 C:\Users\hajar\Desktop\hausarbeit\se2project\src\main\java\de\hbrs\se2\services\ReservierungService.java
 C:\Users\hajar\Desktop\hausarbeit\se2project\src\main\java\de\hbrs\se2\dao\entities\Auto.java
@@ -21,6 +22,7 @@ C:\Users\hajar\Desktop\hausarbeit\se2project\src\main\java\de\hbrs\se2\utils\Vie
 C:\Users\hajar\Desktop\hausarbeit\se2project\src\main\java\de\hbrs\se2\views\RegistrierungView.java
 C:\Users\hajar\Desktop\hausarbeit\se2project\src\main\java\de\hbrs\se2\exception\IncorrectEmailOrPasswordException.java
 C:\Users\hajar\Desktop\hausarbeit\se2project\src\main\java\de\hbrs\se2\views\LoginView.java
+C:\Users\hajar\Desktop\hausarbeit\se2project\src\main\java\de\hbrs\se2\exception\DataBaseException.java
 C:\Users\hajar\Desktop\hausarbeit\se2project\src\main\java\de\hbrs\se2\services\AuthServiceImpl.java
 C:\Users\hajar\Desktop\hausarbeit\se2project\src\main\java\de\hbrs\se2\exception\UserNotExistException.java
 C:\Users\hajar\Desktop\hausarbeit\se2project\src\main\java\de\hbrs\se2\services\AuthService.java
