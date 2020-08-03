@@ -48,6 +48,7 @@ public class KundeView extends VerticalLayout implements View, MenuBar.Command {
 
         addStyleName("view");
         logout = new Button("Logout");
+        logout.setId("logout");
         logout.addStyleName("m");
         logout.addClickListener(new Button.ClickListener() {
             @Override
@@ -64,11 +65,17 @@ public class KundeView extends VerticalLayout implements View, MenuBar.Command {
         menuly.setSizeFull();
 
         menu = new MenuBar() ;
+       // menu.setId("menu");
         MenuBar.MenuItem myAuto = menu.addItem("All Autos", null, this);
+
+        myAuto.setStyleName("myAuto");
+       // myAuto.set;
         menu.addStyleName("m");
         MenuBar.MenuItem  myReservation = menu.addItem("Reservieren", null, this);
+        myReservation.setStyleName("myReservation");
 
         MenuBar.MenuItem reservation = menu.addItem("My Reservation", null , this);
+        reservation.setStyleName("reservation");
 
         Label icon = new Label("<b>Carlooksystem</b>", ContentMode.HTML);
         icon.addStyleName("icon");
@@ -89,7 +96,9 @@ public class KundeView extends VerticalLayout implements View, MenuBar.Command {
         menuly.setComponentAlignment(menu, Alignment.MIDDLE_CENTER);
 
         searchField = new TextField();
+        searchField.setId("search");
         search = new Button("Suche");
+        search.setId("suche");
         search.addStyleName("m");
         search.addClickListener(new Button.ClickListener() {
             @Override
@@ -120,6 +129,7 @@ public class KundeView extends VerticalLayout implements View, MenuBar.Command {
         List<Auto> autosListe = autoService.search(text);
 
         Button cancel = new Button("Cancel");
+        cancel.setId("cancel");
         cancel.addClickListener(new Button.ClickListener() {
             @Override
             public void buttonClick(Button.ClickEvent clickEvent) {
@@ -128,12 +138,14 @@ public class KundeView extends VerticalLayout implements View, MenuBar.Command {
             }
         });
         if(autosListe.isEmpty()){
-            Label label = new Label("Keine Sucheergebnisse vorhandeln");
+            Label label = new Label("Keine Sucheergebnisse vorhanden");
+            label.setId("label");
             contently.addComponent(label);
             contently.addComponent(cancel);
 
         }else{
             Label label = new Label("Sucheergebnis: "+autosListe.size());
+            label.setId("suchelbl");
             contently.addComponent(label);
             contently.addComponent(cancel);
 
@@ -164,6 +176,7 @@ public class KundeView extends VerticalLayout implements View, MenuBar.Command {
         List<Auto> autosListe = autoService.getAllAutos();
         if(autosListe.isEmpty()){
             Label label = new Label("Keine Autos vorhandeln");
+            label.setId("autolbl");
             contently.addComponent(label);
 
         }else{
